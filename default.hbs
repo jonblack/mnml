@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}">
+
+  <link rel="stylesheet" href="{{asset "css/normalize.css"}}" />
+  <link rel="stylesheet" href="{{asset "css/highlightjs/solarized-light.css"}}" />
+  <link rel="stylesheet" href="{{asset "css/style.css"}}" />
+  <link rel="stylesheet" href="{{asset "css/fonts.css"}}" />
+
+  {{ghost_head}}
+</head>
+<body>
+
+  <nav class="blog-nav">
+    <div class="container">
+      <h4 class="blog-logo">
+        <a title="{{@blog.title}}" href="{{@blog.url}}">{{@blog.title}}</a>
+      </h4>
+      {{navigation}}
+    </div>
+  </nav>
+
+  <div class="container">
+    {{{body}}}
+  </div>
+
+  <script src="{{asset "js/highlight.pack.min.js"}}"></script>
+  <script src="{{asset "js/scripts.js"}}"></script>
+
+  {{ghost_foot}}
+</body>
+</html>

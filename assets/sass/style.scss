@@ -1,0 +1,323 @@
+$fa-font-path: "../fonts/font-awesome";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+// Variables
+
+$color-primary: #00ADB7;
+
+$text-font: 'Roboto', sans-serif;
+$text-font-size: 18px;
+$text-font-color: #424242;
+$text-font-color-muted: #AEADAD;
+
+$code-font: 'Roboto Mono', monospace;
+$code-font-size: 15px;
+
+// Global
+
+body {
+  color: $text-font-color;
+  font-family: $text-font;
+  font-size: $text-font-size;
+}
+
+p {
+  line-height: 1.8em;
+  margin: 0 0 30px;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #f0f0f2;
+  margin: 45px 0;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px dotted $color-primary;
+  }
+}
+
+ol, ul {
+  margin: 0 0 30px;
+  padding-left: 50px;
+
+  ol, ul { margin: 0; }
+  li { line-height: 1.8; }
+}
+
+blockquote {
+  border-left: 2px solid $text-font-color-muted;
+  margin: 40px 0;
+  padding: 5px 30px;
+
+  p {
+    color: $text-font-color-muted;
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+// Source code
+
+pre {
+  margin: 0 0 30px;
+}
+
+code {
+  font-family: $code-font;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.hljs {
+  font-size: $code-font-size;
+}
+
+
+// Tables
+
+table {
+  border: 1px solid #dbdbdb;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 30px;
+  width: 100%;
+
+  thead {
+    tr th {
+      border-bottom: 1px solid #dbdbdb;
+      padding: 0.5em 0.75em;
+      text-align: left;
+    }
+  }
+
+  tbody {
+    tr td {
+      border: 1px solid #dbdbdb;
+      border-width: 0 0 1px;
+      padding: 0.5em 0.75em;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom-width: 0;
+    }
+
+    tr:nth-child(2n-1) {
+      background-color: #fafafa;
+    }
+  }
+}
+
+// Layout
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.hidden {
+  display: none;
+}
+
+// Post
+
+.post {
+  margin-bottom: 75px;
+
+  .post-header {
+    border-bottom: 1px solid #f0f0f2;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+
+    img {
+      margin: 0 0 40px 0;
+      width: 100%;
+    }
+
+    .post-title {
+      font-size: 2em;
+      margin: 0 0 20px;
+    }
+
+    .post-date {
+      color: $text-font-color-muted;
+      font-size: 0.9em;
+      line-height: 1em;
+      margin: 0;
+    }
+  }
+
+  h1 { font-size: 1.4em; }
+  h2 { font-size: 1.1em; }
+
+  .citation {
+    color: $text-font-color-muted;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+
+    a {
+      color: $text-font-color-muted;
+      font-weight: bold;
+    }
+  }
+
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 45px;
+  }
+}
+
+// Post card
+
+.post-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+    header a {
+      color: darken( $color-primary, 10% );
+      transition: 0.2s;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+
+    a:hover {
+      border-bottom: none;
+      color: darken( $color-primary, 10% );
+      transition: 0.2s;
+    }
+
+    .post-card-title { margin: 0; }
+
+    .post-card-date {
+      color: $text-font-color-muted;
+      font-size: 0.8em;
+      line-height: 1.15;
+      margin: 0;
+    }
+  }
+
+  .card-content { margin-bottom: 10px; }
+
+  footer p { margin-bottom: 0; }
+}
+
+// Post tags
+
+.post-tags {
+  color: $text-font-color-muted;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+  vertical-align: bottom;
+
+  span { font-weight: 600; }
+}
+
+// Pagination
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+// Button
+
+.button {
+  background: $color-primary;
+  border-radius: 2px;
+  color: #FFF;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 5px;
+  text-align: center;
+  width: 21px;
+
+  &:hover {
+    background: darken( $color-primary, 10% );
+    border-bottom: none;
+  }
+}
+
+// Blog nav
+
+.blog-nav {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .nav {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        line-height: 1.15;
+        margin-left: 10px;
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  .blog-logo {
+    margin: 0;
+  }
+}
+
+// Marginnote
+
+.margin-target {
+  position: relative;
+}
+
+.margin-note {
+  color: darken( $text-font-color-muted, 10% );
+  border-left: 1px solid $text-font-color-muted;
+  margin-left: 20px;
+  padding: 0 10px;
+  font-size: 0.7em;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 150px;
+
+  p { margin: 0; }
+
+  a {
+    color: desaturate( $color-primary, 40% );
+
+    &:hover {
+      border-bottom: 1px dotted desaturate( $color-primary, 40% );
+    }
+  }
+}

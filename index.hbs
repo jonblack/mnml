@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{#foreach posts}}
+  <article class="post-card">
+    <header>
+      <a title="{{title}}" href="{{url}}">
+        <h4 class="post-card-title">{{title}}</h4>
+      </a>
+      <p class="post-card-date">
+        <time datetime="{{published_at}}">{{date format="M/D/YYYY"}}</time>
+      </p>
+    </header>
+    <div class="card-content">
+      {{excerpt words=25}}...
+    </div>
+    <footer>
+      {{#if tags}}
+        <p class="post-tags"><span>Tagged:</span> {{tags}}</p>
+      {{/if}}
+    </footer>
+  </article>
+{{/foreach}}
+
+<div class="post-navigation">
+  {{pagination}}
+</div>
