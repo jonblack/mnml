@@ -159,17 +159,38 @@ table {
     }
   }
 
-  h1 { font-size: 1.4em; }
-  h2 { font-size: 1.1em; }
+  .post-content {
+    h1 {
+      font-size: 1.4em;
+      position: relative;
 
-  .citation {
-    color: $text-font-color-muted;
-    font-size: 0.8em;
-    margin-bottom: 5px;
+      &:before {
+        content: "#";
+        position: absolute;
+        left: -20px;
+      }
+    }
 
-    a {
+    h2 {
+      font-size: 1.1em;
+      position: relative;
+
+      &:before {
+        content: "##";
+        position: absolute;
+        left: -30px;
+      }
+    }
+
+    .citation {
       color: $text-font-color-muted;
-      font-weight: bold;
+      font-size: 0.8em;
+      margin-bottom: 5px;
+
+      a {
+        color: $text-font-color-muted;
+        font-weight: bold;
+      }
     }
   }
 
@@ -267,6 +288,7 @@ table {
 // Blog nav
 
 .blog-nav {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 40px;
   padding: 20px 0;
   width: 100%;
