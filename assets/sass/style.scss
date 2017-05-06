@@ -241,7 +241,10 @@ table {
     }
   }
 
-  .card-content { margin-bottom: 10px; }
+  .card-content {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
 
   footer p { margin-bottom: 0; }
 }
@@ -316,30 +319,93 @@ table {
   }
 }
 
-// Marginnote
+// Media queries
 
-.margin-target {
-  position: relative;
+@media only screen and (max-width: 1089px) {
+  .margin-target {
+  }
+
+  .margin-note {
+    background-color: whitesmoke;
+    border: 1px solid $text-font-color-muted;
+    border-radius: 3px;
+    color: lighten( $text-font-color, 20% );
+    padding: 1em 1.25em;
+    margin: 0 0 30px;
+
+    p { margin: 0; }
+  }
 }
 
-.margin-note {
-  color: darken( $text-font-color-muted, 10% );
-  border-left: 1px solid $text-font-color-muted;
-  margin-left: 20px;
-  padding: 0 10px;
-  font-size: 0.7em;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 150px;
+@media only screen and (min-width: 1090px) {
+  .margin-target {
+    position: relative;
+  }
 
-  p { margin: 0; }
+  .margin-note {
+    color: darken( $text-font-color-muted, 10% );
+    border-left: 1px solid $text-font-color-muted;
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 0.7em;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 150px;
 
-  a {
-    color: desaturate( $color-primary, 40% );
+    p { margin: 0; }
 
-    &:hover {
-      border-bottom: 1px dotted desaturate( $color-primary, 40% );
+    a {
+      color: desaturate( $color-primary, 40% );
+
+      &:hover {
+        border-bottom: 1px dotted desaturate( $color-primary, 40% );
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .container {
+      width: 400px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .container {
+      width: 300px;
+  }
+
+  .post {
+    .post-header {
+      .post-title {
+        font-size: 1.6em;
+        margin: 0 0 20px;
+      }
+    }
+
+    .post-content {
+      h1 {
+        font-size: 1.4em;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: -20px;
+        }
+      }
+
+      h2 {
+        font-size: 1.1em;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: -30px;
+        }
+      }
     }
   }
 }
