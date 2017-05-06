@@ -326,12 +326,14 @@ table {
   }
 
   .margin-note {
-    background-color: whitesmoke;
-    border: 1px solid $text-font-color-muted;
+    border-top: 1px solid $text-font-color-muted;
+    border-bottom: 1px solid $text-font-color-muted;
     border-radius: 3px;
-    color: lighten( $text-font-color, 20% );
+    color: lighten( $text-font-color, 10% );
     padding: 1em 1.25em;
+    font-size: 0.9em;
     margin: 0 0 30px;
+    text-align: center;
 
     p { margin: 0; }
   }
