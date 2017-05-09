@@ -208,7 +208,7 @@ table {
       margin: 20px 0;
     }
 
-    .citation {
+    .citation, .footnotes {
       color: $text-font-color-muted;
       font-size: 0.8em;
       margin-bottom: 5px;
@@ -216,6 +216,17 @@ table {
       a {
         color: $text-font-color-muted;
         font-weight: bold;
+      }
+    }
+
+    .footnotes {
+      ol {
+        list-style-position: inside;
+        padding-left: 0;
+
+        li {
+          p { display: inline; }
+        }
       }
     }
   }
