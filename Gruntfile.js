@@ -55,6 +55,22 @@ module.exports = function(grunt) {
             src: 'node_modules/font-awesome/fonts/*',
             dest: 'assets/fonts/font-awesome/'
           },
+          {
+            expand: false,
+            src: 'node_modules/katex/dist/katex.min.js',
+            dest: 'assets/js/katex.min.js'
+          },
+          {
+            expand: false,
+            src: 'node_modules/katex/dist/katex.min.css',
+            dest: 'assets/css/katex.min.css'
+          },
+          {
+            expand: true,
+            flatten: true,
+            src: 'node_modules/katex/dist/fonts/*',
+            dest: 'assets/css/fonts/'
+          },
         ]
       }
     }

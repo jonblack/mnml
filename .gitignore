@@ -4,5 +4,8 @@ mnml.zip
 
 assets/css/style.*
 assets/css/highlightjs
+assets/css/katex.min.css
+assets/css/fonts/
 assets/js/highlight.pack.min.js
+assets/js/katex.min.js
 assets/fonts/font-awesome/
