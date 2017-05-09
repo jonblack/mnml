@@ -1,24 +1,46 @@
 {{!< default}}
 
+<header class="blog-header">
+  {{#if @blog.logo}}
+    <a href="{{@blog.url}}">
+      <img class="blog-logo" src="{{@blog.logo}}"/>
+    </a>
+  {{/if}}
+
+  {{#if @blog.title}}
+    <h1 class="blog-title">{{@blog.title}}</h1>
+  {{/if}}
+
+  {{#if @blog.description}}
+    <p class="blog-description">"{{@blog.description}}"</p>
+  {{/if}}
+
+  <div class="nav">
+    {{#if @blog.twitter}}
+      <a class="button" href="{{twitter_url}}">{{@blog.twitter}}</a>
+    {{/if}}
+    <a class="button" href="{{@blog.url}}">{{@blog.url}}</a>
+  </div>
+</header>
+
 {{#foreach posts}}
-  <article class="post-card">
-    <header>
-      <a title="{{title}}" href="{{url}}">
-        <h4 class="post-card-title">{{title}}</h4>
-      </a>
-      <p class="post-card-date">
-        <time datetime="{{published_at}}">{{date format="M/D/YYYY"}}</time>
-      </p>
+  <article class="{{post_class}}">
+    <header class="post-header">
+      <time class="post-date" datetime="{{published_at}}">
+        {{date format="MMMM Do, YYYY"}}
+      </time>
+      <h1 class="post-title">
+        <a href="{{url}}">{{title}}</a>
+      </h1>
     </header>
-    <div class="card-content">
-      {{excerpt words=25}}...
+    <div class="post-content">
+      {{{content words=150}}}
     </div>
-    <footer>
-      {{#if tags}}
-        <p class="post-tags"><span>Tagged:</span> {{tags}}</p>
-      {{/if}}
-    </footer>
+    <a class="button" href="{{url}}">
+      Continue reading <i class="fa fa-arrow-circle-right"></i>
+    </a>
   </article>
+  <hr>
 {{/foreach}}
 
 <div class="post-navigation">

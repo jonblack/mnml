@@ -1,71 +1,85 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-weight: 300;
   font-style: normal;
-  src: url('../fonts/Roboto-300/Roboto-300.eot');
-  src: url('../fonts/Roboto-300/Roboto-300.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Light'),
-       local('Roboto-300'),
-       url('../fonts/Roboto-300/Roboto-300.woff2') format('woff2'),
-       url('../fonts/Roboto-300/Roboto-300.woff') format('woff'),
-       url('../fonts/Roboto-300/Roboto-300.ttf') format('truetype'),
-       url('../fonts/Roboto-300/Roboto-300.svg#Roboto') format('svg');
+  src: url('../fonts/Open-Sans-300/Open-Sans-300.eot');
+  src: url('../fonts/Open-Sans-300/Open-Sans-300.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light'),
+       local('Open-Sans-300'),
+       url('../fonts/Open-Sans-300/Open-Sans-300.woff2') format('woff2'),
+       url('../fonts/Open-Sans-300/Open-Sans-300.woff') format('woff'),
+       url('../fonts/Open-Sans-300/Open-Sans-300.ttf') format('truetype'),
+       url('../fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans') format('svg');
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-weight: 400;
   font-style: normal;
-  src: url('../fonts/Roboto-regular/Roboto-regular.eot');
-  src: url('../fonts/Roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
-       local('Roboto'),
-       local('Roboto-regular'),
-       url('../fonts/Roboto-regular/Roboto-regular.woff2') format('woff2'),
-       url('../fonts/Roboto-regular/Roboto-regular.woff') format('woff'),
-       url('../fonts/Roboto-regular/Roboto-regular.ttf') format('truetype'),
-       url('../fonts/Roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+  src: url('../fonts/Open-Sans-regular/Open-Sans-regular.eot');
+  src: url('../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans'),
+       local('Open-Sans-regular'),
+       url('../fonts/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
+       url('../fonts/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
+       url('../fonts/Open-Sans-regular/Open-Sans-regular.ttf') format('truetype'),
+       url('../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans') format('svg');
 }
 
 @font-face {
-  font-family: 'Roboto';
-  font-weight: 500;
+  font-family: 'Open Sans';
+  font-weight: 600;
   font-style: normal;
-  src: url('../fonts/Roboto-500/Roboto-500.eot');
-  src: url('../fonts/Roboto-500/Roboto-500.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Medium'),
-       local('Roboto-500'),
-       url('../fonts/Roboto-500/Roboto-500.woff2') format('woff2'),
-       url('../fonts/Roboto-500/Roboto-500.woff') format('woff'),
-       url('../fonts/Roboto-500/Roboto-500.ttf') format('truetype'),
-       url('../fonts/Roboto-500/Roboto-500.svg#Roboto') format('svg');
+  src: url('../fonts/Open-Sans-600/Open-Sans-600.eot');
+  src: url('../fonts/Open-Sans-600/Open-Sans-600.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Semibold'),
+       local('Open-Sans-600'),
+       url('../fonts/Open-Sans-600/Open-Sans-600.woff2') format('woff2'),
+       url('../fonts/Open-Sans-600/Open-Sans-600.woff') format('woff'),
+       url('../fonts/Open-Sans-600/Open-Sans-600.ttf') format('truetype'),
+       url('../fonts/Open-Sans-600/Open-Sans-600.svg#OpenSans') format('svg');
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-weight: 700;
   font-style: normal;
-  src: url('../fonts/Roboto-700/Roboto-700.eot');
-  src: url('../fonts/Roboto-700/Roboto-700.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Bold'),
-       local('Roboto-700'),
-       url('../fonts/Roboto-700/Roboto-700.woff2') format('woff2'),
-       url('../fonts/Roboto-700/Roboto-700.woff') format('woff'),
-       url('../fonts/Roboto-700/Roboto-700.ttf') format('truetype'),
-       url('../fonts/Roboto-700/Roboto-700.svg#Roboto') format('svg');
+  src: url('../fonts/Open-Sans-700/Open-Sans-700.eot');
+  src: url('../fonts/Open-Sans-700/Open-Sans-700.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Bold'),
+       local('Open-Sans-700'),
+       url('../fonts/Open-Sans-700/Open-Sans-700.woff2') format('woff2'),
+       url('../fonts/Open-Sans-700/Open-Sans-700.woff') format('woff'),
+       url('../fonts/Open-Sans-700/Open-Sans-700.ttf') format('truetype'),
+       url('../fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans') format('svg');
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
-  font-weight: 300;
+  font-family: 'Open Sans';
+  font-weight: 800;
   font-style: normal;
-  src: url('/fonts/Roboto-Mono-300/Roboto-Mono-300.eot');
-  src: url('/fonts/Roboto-Mono-300/Roboto-Mono-300.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Mono Light'),
-       local('Roboto-Mono-300'),
-       url('../fonts/Roboto-Mono-300/Roboto-Mono-300.woff2') format('woff2'),
-       url('../fonts/Roboto-Mono-300/Roboto-Mono-300.woff') format('woff'),
-       url('../fonts/Roboto-Mono-300/Roboto-Mono-300.ttf') format('truetype'),
-       url('../fonts/Roboto-Mono-300/Roboto-Mono-300.svg#RobotoMono') format('svg');
+  src: url('../fonts/Open-Sans-800/Open-Sans-800.eot');
+  src: url('../fonts/Open-Sans-800/Open-Sans-800.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Extrabold'),
+       local('Open-Sans-800'),
+       url('../fonts/Open-Sans-800/Open-Sans-800.woff2') format('woff2'),
+       url('../fonts/Open-Sans-800/Open-Sans-800.woff') format('woff'),
+       url('../fonts/Open-Sans-800/Open-Sans-800.ttf') format('truetype'),
+       url('../fonts/Open-Sans-800/Open-Sans-800.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/Open-Sans-italic/Open-Sans-italic.eot');
+  src: url('../fonts/Open-Sans-italic/Open-Sans-italic.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Italic'),
+       local('Open-Sans-italic'),
+       url('../fonts/Open-Sans-italic/Open-Sans-italic.woff2') format('woff2'),
+       url('../fonts/Open-Sans-italic/Open-Sans-italic.woff') format('woff'),
+       url('../fonts/Open-Sans-italic/Open-Sans-italic.ttf') format('truetype'),
+       url('../fonts/Open-Sans-italic/Open-Sans-italic.svg#OpenSans') format('svg');
 }
 
 @font-face {
@@ -80,20 +94,6 @@
        url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.woff') format('woff'),
        url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.ttf') format('truetype'),
        url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.svg#RobotoMono') format('svg');
-}
-
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: 500;
-  font-style: normal;
-  src: url('../fonts/Roboto-Mono-500/Roboto-Mono-500.eot');
-  src: url('../fonts/Roboto-Mono-500/Roboto-Mono-500.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Mono Medium'),
-       local('Roboto-Mono-500'),
-       url('../fonts/Roboto-Mono-500/Roboto-Mono-500.woff2') format('woff2'),
-       url('../fonts/Roboto-Mono-500/Roboto-Mono-500.woff') format('woff'),
-       url('../fonts/Roboto-Mono-500/Roboto-Mono-500.ttf') format('truetype'),
-       url('../fonts/Roboto-Mono-500/Roboto-Mono-500.svg#RobotoMono') format('svg');
 }
 
 @font-face {

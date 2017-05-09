@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="logo">
+      {{#if @blog.title}}
+        <h2 class="blog-title">
+          <a title="{{@blog.title}}" href="{{@blog.url}}">{{@blog.title}}</a>
+        </h2>
+      {{/if}}
+    </div>
+
+    <div class="nav">
+      {{#if @blog.navigation}}
+        <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+      {{/if}}
+    </div>
+  </div>
+</nav>

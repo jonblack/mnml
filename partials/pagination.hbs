@@ -1,13 +1,24 @@
 <nav class="pagination" role="navigation">
   {{#if prev}}
-    <a class="button newer-posts" href="{{page_url prev}}">
-      <i class="fa fa-arrow-circle-left"></i>
+    <a class="button newer-posts"
+       href="{{page_url prev}}">
+      <i class="fa fa-arrow-circle-left"></i> newer
+    </a>
+  {{else}}
+    <a class="button newer-posts"
+       href="{{page_url prev}}" style="visibility: hidden;">
+      <i class="fa fa-arrow-circle-left"></i> newer
     </a>
   {{/if}}
 
   {{#if next}}
     <a class="button older-posts" href="{{page_url next}}">
-      <i class="fa fa-arrow-circle-right"></i>
+      older <i class="fa fa-arrow-circle-right"></i>
+    </a>
+  {{else}}
+    <a class="button older-posts"
+       href="{{page_url next}}" style="visibility: hidden;">
+      older <i class="fa fa-arrow-circle-right"></i>
     </a>
   {{/if}}
 </nav>
