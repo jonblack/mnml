@@ -365,10 +365,10 @@ table {
     p { margin: 0; }
 
     a {
-      color: desaturate( $color-primary, 40% );
+      color: darken( $text-font-color-muted, 10% );
 
       &:hover {
-        border-bottom: 1px dotted desaturate( $color-primary, 40% );
+        border-bottom: 2px solid $color-primary;
       }
     }
   }
