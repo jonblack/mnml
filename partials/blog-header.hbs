@@ -1,0 +1,22 @@
+<header class="blog-header">
+  {{#if @blog.logo}}
+    <a href="{{@blog.url}}">
+      <img class="blog-logo" src="{{@blog.logo}}"/>
+    </a>
+  {{/if}}
+
+  {{#if @blog.title}}
+    <h1 class="blog-title">{{@blog.title}}</h1>
+  {{/if}}
+
+  {{#if @blog.description}}
+    <p class="blog-description">"{{@blog.description}}"</p>
+  {{/if}}
+
+  <div class="nav">
+    {{#if @blog.twitter}}
+      <a class="button" href="{{twitter_url}}">{{@blog.twitter}}</a>
+    {{/if}}
+    <a class="button" href="{{@blog.url}}">{{@blog.url}}</a>
+  </div>
+</header>
