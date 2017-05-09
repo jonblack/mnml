@@ -110,7 +110,17 @@ p > code {
   }
 
   .nav {
+    display: flex;
+    justify-content: center;
     margin-top: 60px;
+
+    a {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 }
 
@@ -392,6 +402,22 @@ table {
 @media only screen and (max-width: 420px) {
   .container {
       width: 300px;
+  }
+
+  .blog-header {
+    .nav {
+      flex-direction: column;
+
+      a {
+        margin-left: 0;
+        margin-top: 10px;
+
+        &:first-child {
+          margin-left: 0;
+          margin-top: 0;
+        }
+      }
+    }
   }
 
   .post {
