@@ -19,6 +19,10 @@ body {
   color: $text-font-color;
   font-family: $text-font;
   font-size: $text-font-size;
+
+  .statcounter {
+      img { width: 1px; height: 1px; }
+  }
 }
 
 p {
