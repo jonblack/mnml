@@ -1,13 +1,18 @@
 {
   "name": "mnml",
+  "description": "A minimal Ghost theme",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "ghost": ">=1.0.0"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "author": {
+    "name": "Jon Black",
+    "email": "jon_black@mm.st"
+  },
+  "config": {
+    "posts_per_page": 5
+  },
   "devDependencies": {
     "font-awesome": "^4.7.0",
     "grunt": "^1.0.1",
